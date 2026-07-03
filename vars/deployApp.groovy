@@ -1,6 +1,6 @@
 def deployToTomcatFun(String warFile) {
     stage('Deploy to Tomcat') {
-        sh "cp ${warFile} /opt/tomcat/webapps/"
+        sh 'cp target/calendar.war /opt/tomcat/webapps/'
 	echo " deploye the application"
     }
 }
